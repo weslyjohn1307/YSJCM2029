@@ -1,0 +1,27 @@
+name: Election Progress Bot
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # This runs every day at 9:00 AM UTC
+  workflow_dispatch:  # Allows you to manually trigger the workflow
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        pip install tweepy pillow
+
+    - name: Run progress bot
+      run: |
+        python your_script.py  # Make sure the Python script is named correctly
