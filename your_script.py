@@ -21,7 +21,7 @@ def create_progress_bar(progress_percent):
     # Create a blank image
     img = Image.new('RGB', (800, 200), color=(255, 255, 255))
     draw = ImageDraw.Draw(img)
-    
+
     # Set the font for text
     font = ImageFont.load_default()
 
