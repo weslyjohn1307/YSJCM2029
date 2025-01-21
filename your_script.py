@@ -3,10 +3,10 @@ import datetime
 from PIL import Image, ImageDraw, ImageFont
 
 # Twitter API credentials (replace with your actual keys)
-consumer_key = 'YOUR_CONSUMER_KEY'
-consumer_secret = 'YOUR_CONSUMER_SECRET'
-access_token = 'YOUR_ACCESS_TOKEN'
-access_token_secret = 'YOUR_ACCESS_TOKEN_SECRET'
+consumer_key = 'UBf6BcqUrx5zyMPBObFDsalAD'
+consumer_secret = 'glJriYXbWTyoaj5T5JeWVy3gg265n9zcDIkMOnQEAIQDMnsE3i'
+access_token = '1881764698594672641-WFJiHUWnPXJAl6NUl51KOtHCuJEqKo'
+access_token_secret = 'VSZQokK8W1pVYp7CiBT7VcR3t6KFdeo1Jak5f1BUCZ8hN'
 
 # Authenticate with Twitter
 auth = tweepy.OAuth1UserHandler(consumer_key, consumer_secret, access_token, access_token_secret)
